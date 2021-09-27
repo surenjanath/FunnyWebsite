@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Title -->
+<title>Roast Me</title>
+
+<!-- Favicons -->
+<!-- <link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon_60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon_76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon_120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon_152x152.png"> -->
+
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{% static 'Roast/css/bootstrap.min.css' %}"  />
+<link rel="stylesheet" href="{% static 'Roast/css/owl.carousel.css' %}" />
+<link rel="stylesheet" href="{% static 'Roast/css/owl.theme.css' %}" />
+<link rel="stylesheet" href="{% static 'Roast/css/swiper.min.css' %}">
+<link rel="stylesheet" href="{% static 'Roast/css/font-awesome.min.css' %}" />
+<link rel="stylesheet" href="{% static 'Roast/fonts/flaticon.css' %}" />
+<link rel="stylesheet" href="{% static 'Roast/css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'Roast/colors/green.css' %}" id="color" />
+
+</head>
+
+<body>
+
+<!-- Loader -->
+<div id="page-loader"></div>
+<!-- Loader / End -->
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+	<!-- Home -->
+    <div id="home">
+    	<div class="home-wrapper">
+
+	    	<!-- Home Content -->
+	    	<div class="home-content home-photo main-photo dark">
+	    		<div class="overlay overlay-black" data-alpha="60"></div>
+	    		<div class="text-center vertical-center">
+	    			<span class="home-title">Roast <strong>Me</strong></span>
+	    			<span class="home-caption">The <strong>Simplistic</strong></span>
+	    		</div>
+	    	</div>
+
+	    	<!-- Start Button -->
+	    	<a href="#" id="btn-start" data-target="next-section"></a>
+
+	    	<!-- Main Nav -->
+	    	<nav id="main-nav">
+
+	    		<!-- Content -->
+	            <div class="text-right vertical-center">
+	        		<div class="nav-text">
+		        		<div class="my-avatar"><img src="{% static 'Roast/images/photos/my-avatar.png' %}" class="img-circle" alt="" /></div>
+		        		<h2 class="margin-bottom-0">Surenjanath <strong>Singh</strong></h2>
+		        		<h6 class="nav-caption">I’m just bored so here's a fun website. <span class="text-primary">Self taught Programmer</span> from Trinidad.</h6>
+		        	</div>
+	        		<div class="content-buttons">
+	            		<a href="#" class="btn btn-primary" data-placement="1">Here's my Resume</a>
+	            		<a href="blog.html" class="btn btn-primary" data-placement="3">Incase you want to see it.</a>
+	                </div>
+	            </div>
+	    		<!-- Navigation buttons -->
+	            <div class="nav-buttons">
+	            	<a href="#" class="btn-prev" data-target="prev-section"><i class="fa fa-angle-left"></i><span></span></a>
+	            	<a href="#" class="btn-next" data-target="next-section"><span>My Resume</span><i class="fa fa-angle-right"></i></a>
+	            </div>
+	    	</nav>
+
+    	</div>
+    </div>
+    <!-- Home / End -->
+
+    <!-- Sections -->
+    <div id="sections" class="swiper-container">
+
+    	<div class="swiper-wrapper">
+
+
+
+        <!-- Resume -->
+			<section id="resume" class="swiper-slide" data-caption="Check my <span>skills</span> &amp; <span>abilities</span>" data-title="My Resume">
+
+				<embed src="{% static 'Roast/document/resume.pdf' %}#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0" type="application/pdf" width="100%" height="100%">
+
+			</section>
+			<!-- Resume / End -->
+
+			<!-- Latest Posts / End -->
+
+    		<!-- Contact -->
+			<section id="contact" class="swiper-slide" data-caption="Do not hestiate to <span>Roast me</span>" data-title="Roast me">
+				<div class="section-wrapper">
+
+					<!-- Content -->
+					<div class="contact-content padded">
+
+		    			<!-- Form -->
+		    			<div class="contact-box">
+		    				<h4 class="title-bar title-bar-black"><strong>Write</strong> your Roast</h4>
+		    				<form id="contact-form" class=" clearfix">
+		    					<div class="row">
+		    						<div class="col-md-6 form-group">
+		    							<input type="text" name="name" class="form-control" placeholder="Name ">
+		    						</div>
+		    						<div class="col-md-6 form-group">
+		    							<input type="email" name="email" class="form-control" placeholder="Email address">
+		    						</div>
+		    						<div class="col-md-12 form-group">
+		    							<input type="text" name="subject" class="form-control" placeholder="Roast Heading">
+		    						</div>
+		    					</div>
+		    					<div class="form-group">
+		    						<textarea name="message" class="form-control" rows="4" placeholder="Roast"></textarea>
+		    					</div>
+		    					<button type="submit" class="btn btn-primary pull-right">Submit Roast!</button>
+		    				</form>
+		    			</div>
+
+		    			<!-- Social Media -->
+		    			<div class="contact-box">
+                <p></p>
+		    				<h4 class="title-bar title-bar-black"><strong>Social</strong> media</h4>
+		    				<div class="social-icons margin-bottom-10">
+		    					<a href="#" class="social-icon icon-facebook"><i class="fa fa-facebook fa-fw"></i></a>
+		    					<a href="#" class="social-icon icon-twitter"><i class="fa fa-twitter fa-fw"></i></a>
+		    					<a href="#" class="social-icon icon-google-plus"><i class="fa fa-linkedin fa-fw"></i></a>
+		    				</div>
+		    				<div class="fb-like" data-href="https://www.facebook.com/suelopl" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+		    			</div>
+
+					</div>
+
+					<!-- Map -->
+					<div class="contact-map light">
+						<!-- <div id="google-map" data-style="light"></div> -->
+            <!-- <img src="https://images.pexels.com/photos/4772853/pexels-photo-4772853.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="an artist's rendition of a black hole in space" > -->
+
+						<div class="map-overlay">
+							<div class="overlay overlay-black" data-alpha="0"></div>
+
+							<div class="overlay-content vertical-center ">
+                <!-- Info -->
+                  <div class="contact-box">
+                    <h4 class="title-bar title-bar-black"><strong>Latest</strong> Roasts</h4>
+                  </div>
+								<div class="owl-carousel" data-single-item="true" data-auto-play="4000">
+                  {% for i in Roasts.all %}
+									<div>
+										<span class="big-text">{{i.Name}}</span>
+										<span class="caption text-primary">{{i.Content}}</span>
+									</div>
+                  {% endfor %}
+								</div>
+							</div>
+						</div>
+						<!-- <a href="#" class="btn btn-xs btn-black" data-target="toggle-map">Roasts</a> -->
+					</div>
+
+				</div>
+			</section>
+			<!-- Contact / End -->
+
+		</div>
+
+
+
+    </div>
+    <!-- Sections / End -->
+
+    <!-- Mobile Info -->
+	<div id="mobile-info">
+		<span class="left fa fa-chevron-left"></span><span class="right fa fa-chevron-right"></span>
+	</div>
+</div>
+<!-- Page Wrapper / End -->
+
+<!-- Libraries -->
+<script src="{% static 'Roast/js/jquery-1.11.2.min.js' %}"></script>
+<script src="{% static 'Roast/js/bootstrap.min.js' %}"></script>
+
+<!-- Plugins -->
+<script src="{% static 'Roast/js/plugins.js' %}"></script>
+
+<!-- Custom Script -->
+<script src="{% static 'Roast/js/custom.min.js' %}"></script>
+
+</body>
+
+</html>

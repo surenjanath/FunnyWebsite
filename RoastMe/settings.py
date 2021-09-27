@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(11n&7mvm56*g$ud0&6i-2uqz(*!p-c(c64omhq-d4fhl_a)$i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Custom Apps
+    'Roast.apps.RoastConfig',
 ]
 
 MIDDLEWARE = [
